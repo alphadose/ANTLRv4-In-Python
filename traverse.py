@@ -5,7 +5,7 @@ from JSONParser import JSONParser
 import sys
 
 def main():
-    lexer = JSONLexer(StdinStream())
+    lexer = JSONLexer(InputStream(sys.stdin.read()))
     stream = CommonTokenStream(lexer)
     parser = JSONParser(stream)
     tree = parser.json()

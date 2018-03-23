@@ -1,33 +1,33 @@
 # Generated from JSON.g4 by ANTLR 4.7.1
 # encoding: utf-8
-from __future__ import print_function
 from antlr4 import *
 from io import StringIO
+from typing.io import TextIO
 import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write(u"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3")
-        buf.write(u"\16:\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\3\2\3\2")
-        buf.write(u"\3\3\3\3\3\3\3\3\7\3\23\n\3\f\3\16\3\26\13\3\3\3\3\3")
-        buf.write(u"\3\3\3\3\5\3\34\n\3\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\7")
-        buf.write(u"\5&\n\5\f\5\16\5)\13\5\3\5\3\5\3\5\3\5\5\5/\n\5\3\6\3")
-        buf.write(u"\6\3\6\3\6\3\6\3\6\3\6\5\68\n\6\3\6\2\2\7\2\4\6\b\n\2")
-        buf.write(u"\2\2>\2\f\3\2\2\2\4\33\3\2\2\2\6\35\3\2\2\2\b.\3\2\2")
-        buf.write(u"\2\n\67\3\2\2\2\f\r\5\n\6\2\r\3\3\2\2\2\16\17\7\3\2\2")
-        buf.write(u"\17\24\5\6\4\2\20\21\7\4\2\2\21\23\5\6\4\2\22\20\3\2")
-        buf.write(u"\2\2\23\26\3\2\2\2\24\22\3\2\2\2\24\25\3\2\2\2\25\27")
-        buf.write(u"\3\2\2\2\26\24\3\2\2\2\27\30\7\5\2\2\30\34\3\2\2\2\31")
-        buf.write(u"\32\7\3\2\2\32\34\7\5\2\2\33\16\3\2\2\2\33\31\3\2\2\2")
-        buf.write(u"\34\5\3\2\2\2\35\36\7\f\2\2\36\37\7\6\2\2\37 \5\n\6\2")
-        buf.write(u" \7\3\2\2\2!\"\7\7\2\2\"\'\5\n\6\2#$\7\4\2\2$&\5\n\6")
-        buf.write(u"\2%#\3\2\2\2&)\3\2\2\2\'%\3\2\2\2\'(\3\2\2\2(*\3\2\2")
-        buf.write(u"\2)\'\3\2\2\2*+\7\b\2\2+/\3\2\2\2,-\7\7\2\2-/\7\b\2\2")
-        buf.write(u".!\3\2\2\2.,\3\2\2\2/\t\3\2\2\2\608\7\f\2\2\618\7\r\2")
-        buf.write(u"\2\628\5\4\3\2\638\5\b\5\2\648\7\t\2\2\658\7\n\2\2\66")
-        buf.write(u"8\7\13\2\2\67\60\3\2\2\2\67\61\3\2\2\2\67\62\3\2\2\2")
-        buf.write(u"\67\63\3\2\2\2\67\64\3\2\2\2\67\65\3\2\2\2\67\66\3\2")
-        buf.write(u"\2\28\13\3\2\2\2\7\24\33\'.\67")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\16")
+        buf.write(":\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\3\2\3\2\3\3")
+        buf.write("\3\3\3\3\3\3\7\3\23\n\3\f\3\16\3\26\13\3\3\3\3\3\3\3\3")
+        buf.write("\3\5\3\34\n\3\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\7\5&\n\5")
+        buf.write("\f\5\16\5)\13\5\3\5\3\5\3\5\3\5\5\5/\n\5\3\6\3\6\3\6\3")
+        buf.write("\6\3\6\3\6\3\6\5\68\n\6\3\6\2\2\7\2\4\6\b\n\2\2\2>\2\f")
+        buf.write("\3\2\2\2\4\33\3\2\2\2\6\35\3\2\2\2\b.\3\2\2\2\n\67\3\2")
+        buf.write("\2\2\f\r\5\n\6\2\r\3\3\2\2\2\16\17\7\3\2\2\17\24\5\6\4")
+        buf.write("\2\20\21\7\4\2\2\21\23\5\6\4\2\22\20\3\2\2\2\23\26\3\2")
+        buf.write("\2\2\24\22\3\2\2\2\24\25\3\2\2\2\25\27\3\2\2\2\26\24\3")
+        buf.write("\2\2\2\27\30\7\5\2\2\30\34\3\2\2\2\31\32\7\3\2\2\32\34")
+        buf.write("\7\5\2\2\33\16\3\2\2\2\33\31\3\2\2\2\34\5\3\2\2\2\35\36")
+        buf.write("\7\f\2\2\36\37\7\6\2\2\37 \5\n\6\2 \7\3\2\2\2!\"\7\7\2")
+        buf.write("\2\"\'\5\n\6\2#$\7\4\2\2$&\5\n\6\2%#\3\2\2\2&)\3\2\2\2")
+        buf.write("\'%\3\2\2\2\'(\3\2\2\2(*\3\2\2\2)\'\3\2\2\2*+\7\b\2\2")
+        buf.write("+/\3\2\2\2,-\7\7\2\2-/\7\b\2\2.!\3\2\2\2.,\3\2\2\2/\t")
+        buf.write("\3\2\2\2\608\7\f\2\2\618\7\r\2\2\628\5\4\3\2\638\5\b\5")
+        buf.write("\2\648\7\t\2\2\658\7\n\2\2\668\7\13\2\2\67\60\3\2\2\2")
+        buf.write("\67\61\3\2\2\2\67\62\3\2\2\2\67\63\3\2\2\2\67\64\3\2\2")
+        buf.write("\2\67\65\3\2\2\2\67\66\3\2\2\28\13\3\2\2\2\7\24\33\'.")
+        buf.write("\67")
         return buf.getvalue()
 
 
@@ -41,13 +41,12 @@ class JSONParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ u"<INVALID>", u"'{'", u"','", u"'}'", u"':'", u"'['", 
-                     u"']'", u"'true'", u"'false'", u"'null'" ]
+    literalNames = [ "<INVALID>", "'{'", "','", "'}'", "':'", "'['", "']'", 
+                     "'true'", "'false'", "'null'" ]
 
-    symbolicNames = [ u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"STRING", u"NUMBER", 
-                      u"WS" ]
+    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "STRING", "NUMBER", "WS" ]
 
     RULE_json = 0
     RULE_obj = 1
@@ -55,7 +54,7 @@ class JSONParser ( Parser ):
     RULE_array = 3
     RULE_value = 4
 
-    ruleNames =  [ u"json", u"obj", u"pair", u"array", u"value" ]
+    ruleNames =  [ "json", "obj", "pair", "array", "value" ]
 
     EOF = Token.EOF
     T__0=1
@@ -71,8 +70,8 @@ class JSONParser ( Parser ):
     NUMBER=11
     WS=12
 
-    def __init__(self, input, output=sys.stdout):
-        super(JSONParser, self).__init__(input, output=output)
+    def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
+        super().__init__(input, output)
         self.checkVersion("4.7.1")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
@@ -81,8 +80,8 @@ class JSONParser ( Parser ):
 
     class JsonContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(JSONParser.JsonContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def value(self):
@@ -92,12 +91,12 @@ class JSONParser ( Parser ):
         def getRuleIndex(self):
             return JSONParser.RULE_json
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterJson"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterJson" ):
                 listener.enterJson(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitJson"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitJson" ):
                 listener.exitJson(self)
 
 
@@ -121,11 +120,11 @@ class JSONParser ( Parser ):
 
     class ObjContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(JSONParser.ObjContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
-        def pair(self, i=None):
+        def pair(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(JSONParser.PairContext)
             else:
@@ -135,12 +134,12 @@ class JSONParser ( Parser ):
         def getRuleIndex(self):
             return JSONParser.RULE_obj
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterObj"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterObj" ):
                 listener.enterObj(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitObj"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitObj" ):
                 listener.exitObj(self)
 
 
@@ -196,8 +195,8 @@ class JSONParser ( Parser ):
 
     class PairContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(JSONParser.PairContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def STRING(self):
@@ -210,12 +209,12 @@ class JSONParser ( Parser ):
         def getRuleIndex(self):
             return JSONParser.RULE_pair
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterPair"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPair" ):
                 listener.enterPair(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitPair"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPair" ):
                 listener.exitPair(self)
 
 
@@ -243,11 +242,11 @@ class JSONParser ( Parser ):
 
     class ArrayContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(JSONParser.ArrayContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
-        def value(self, i=None):
+        def value(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(JSONParser.ValueContext)
             else:
@@ -257,12 +256,12 @@ class JSONParser ( Parser ):
         def getRuleIndex(self):
             return JSONParser.RULE_array
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterArray"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterArray" ):
                 listener.enterArray(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitArray"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitArray" ):
                 listener.exitArray(self)
 
 
@@ -318,8 +317,8 @@ class JSONParser ( Parser ):
 
     class ValueContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(JSONParser.ValueContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def STRING(self):
@@ -339,12 +338,12 @@ class JSONParser ( Parser ):
         def getRuleIndex(self):
             return JSONParser.RULE_value
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterValue"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterValue" ):
                 listener.enterValue(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitValue"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitValue" ):
                 listener.exitValue(self)
 
 
