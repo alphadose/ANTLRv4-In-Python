@@ -3,14 +3,14 @@
 ## How to use:-
 
 ```
-python traverse.py
+python3 traverse.py
 ```
 Then give standard input and press Ctrl+D after it is complete.
 
 ## Example:-
 
 ```
- cat incorrect_sample.json | python traverse.py 
+ cat incorrect_sample.json | python3 traverse.py 
 ```
  
  ## Output:-
@@ -24,7 +24,7 @@ line 1:4 no viable alternative at input '{:'
 ## Example:-
 
 ```
-cat correct_sample.json | python traverse.py
+cat correct_sample.json | python3 traverse.py
 ```
 
 There would be no output in this case as the given JSON format is correct.
