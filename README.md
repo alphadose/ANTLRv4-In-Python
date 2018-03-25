@@ -27,5 +27,11 @@ line 1:4 no viable alternative at input '{:'
 cat correct_sample.json | python3 traverse.py
 ```
 
-There would be no output in this case as the given JSON format is correct.
-In other words the tree walker encountered no errors while traversing the Abstract Syntax Tree of the source.
+## Output:-
+
+```
+"a":1
+"b":{"c":2,"d":3}
+"c":2
+"d":3
+```
