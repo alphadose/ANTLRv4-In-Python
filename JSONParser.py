@@ -99,6 +99,12 @@ class JSONParser ( Parser ):
             if hasattr( listener, "exitJson" ):
                 listener.exitJson(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitJson" ):
+                return visitor.visitJson(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -141,6 +147,12 @@ class JSONParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitObj" ):
                 listener.exitObj(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitObj" ):
+                return visitor.visitObj(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -217,6 +229,12 @@ class JSONParser ( Parser ):
             if hasattr( listener, "exitPair" ):
                 listener.exitPair(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPair" ):
+                return visitor.visitPair(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -263,6 +281,12 @@ class JSONParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitArray" ):
                 listener.exitArray(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArray" ):
+                return visitor.visitArray(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -345,6 +369,12 @@ class JSONParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitValue" ):
                 listener.exitValue(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitValue" ):
+                return visitor.visitValue(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
